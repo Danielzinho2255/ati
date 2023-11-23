@@ -1,0 +1,27 @@
+
+// MeuComponente.js
+import React from 'react';
+
+const MeuComponente = (props) => {
+  return (
+    <div>
+      <p>{props.mensagem}</p>
+    </div>
+  );
+};
+
+export default MeuComponente;
+// AlgumaOutraParteDoApp.js
+import React from 'react';
+import MeuComponente from './MeuComponente';
+
+const AlgumaOutraParteDoApp = () => {
+  return (
+    <div>
+      <h1>Meu App React</h1>
+      <MeuComponente mensagem="Isso é uma mensagem importante!" />
+    </div>
+  );
+};
+
+export default AlgumaOutraParteDoApp;
